@@ -1,0 +1,25 @@
+# --- Données : restent en local, jamais sur GitHub (images médicales, licence académique) ---
+data/
+
+# --- Modèles entraînés (poids .pt / .pth) : régénérables par les notebooks ---
+models/
+*.pt
+*.pth
+
+# --- Environnement virtuel ---
+.venv/
+venv/
+
+# --- Python / Jupyter ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.ruff_cache/
+
+# --- Système / éditeur ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Livrables zippés (déposés sur OpenClassrooms, pas sur GitHub) ---
+livrables/*.zip

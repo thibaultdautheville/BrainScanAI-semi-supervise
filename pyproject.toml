@@ -1,0 +1,40 @@
+[project]
+name = "brainscanai-semi-supervise"
+version = "0.1.0"
+description = "Projet 7 OpenClassrooms (Option B) - BrainScanAI : features pré-entraînées, clustering et apprentissage semi-supervisé sur des IRM cérébrales"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    # Données
+    "numpy",
+    "pandas",
+    "pyarrow",
+    # Images
+    "pillow",
+    # Deep learning
+    "torch",
+    "torchvision",
+    # Machine learning classique : réduction de dimension, clustering, métriques, LabelSpreading
+    "scikit-learn",
+    # Visualisation
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    # Notebooks
+    "ipykernel",
+    "nbformat",
+    "nbconvert",
+    "tqdm",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["notebooks"]
