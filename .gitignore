@@ -23,3 +23,6 @@ __pycache__/
 
 # --- Livrables zippés (déposés sur OpenClassrooms, pas sur GitHub) ---
 livrables/*.zip
+
+# --- Exports HTML des notebooks (trace de sauvegarde OneDrive, pas sur GitHub) ---
+reports/*.html
